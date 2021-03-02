@@ -1,9 +1,12 @@
 {
-  "name": "@scalio-oss/nest-couchbase",
+  "name": "@elm-street-technology/nest-couchbase",
   "description": "Couchbase module for Nest framework",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:elm-street-technology/nest-couchbase.git",
   "scripts": {
     "prebuild": "yarn build:clean",
     "build:clean": "cd dist && rm -rf `ls | grep -v \"LICENSE\\|package.json\\|README.md\\|.npmrc\"`",
@@ -41,7 +44,7 @@
     "@zmotivat0r/o0": "1.0.2",
     "class-transformer": "0.2.3",
     "commitizen": "4.0.3",
-    "couchbase": "2.6.5",
+    "couchbase": "2.6.11",
     "coveralls": "3.0.5",
     "cz-conventional-changelog": "3.0.2",
     "husky": "2.7.0",

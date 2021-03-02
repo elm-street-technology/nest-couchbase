@@ -44,13 +44,28 @@ export interface Repository<T> {
    * Retrieves a document.
    * @param key The target document key.
    */
-  get(key: string | Buffer): Promise<T>;
+  get(key: string | Buffer): Promise<{ cas: string; value: T }>;
 
   /**
    * @param key The target document key.
    * @param options The options object.
    */
-  get(key: string | Buffer, options: any): Promise<T>;
+  get(key: string | Buffer, options: any): Promise<{ cas: string; value: T }>;
+
+  /**
+   * Retrieves multiple document.
+   * @param key The target document key.
+   */
+  getMulti(key: string[] | Buffer): Promise<{ [key: string]: { cas: string; value: T } }>;
+
+  /**
+   * @param key The target document keys.
+   * @param options The options object.
+   */
+  getMulti(
+    key: string[] | Buffer,
+    options: any,
+  ): Promise<{ [key: string]: { cas: string; value: T } }>;
 
   /**
    * Lock the document on the server and retrieve it. When an document is locked, its CAS changes and subsequent operations on the document (without providing the current CAS) will fail until the lock is no longer held.

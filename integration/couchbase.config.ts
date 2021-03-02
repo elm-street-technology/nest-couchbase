@@ -5,7 +5,6 @@ export const config: CouchbaseConnectionConfig = {
   username: undefined,
   password: undefined,
   defaultBucket: {
-    name: 'test',
-    password: '123456',
+    name: 'mls-data',
   },
 };

@@ -1,5 +1,5 @@
 {
-  "name": "@scalio-oss/nest-couchbase",
+  "name": "@elm-street-technology/nest-couchbase",
   "description": "Couchbase module for Nest framework",
   "version": "1.0.0",
   "license": "MIT",
@@ -8,13 +8,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/scalio/nest-couchbase.git"
-  },
-  "bugs": {
-    "url": "https://github.com/scalio/nest-couchbase/issues"
-  },
+  "repository": "git@github.com:elm-street-technology/nest-couchbase.git",
   "keywords": [
     "typescript",
     "couchbase",

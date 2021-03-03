@@ -1,7 +1,7 @@
 {
   "name": "@elm-street-technology/nest-couchbase",
   "description": "Couchbase module for Nest framework",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "license": "MIT",
   "main": "index.js",
   "typings": "index.d.ts",
